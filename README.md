@@ -17,7 +17,7 @@
 
 ### Data Collection:
 
-Scrap two twitter accounts: Mufti Menk & Mizi Wahid, using twitter api and import to csv file.
+Scrap two twitter accounts: Mufti Menk & Mizi Wahid, using twitter scrapper and import to csv file.
 
 A total collection of 1798 tweets(incl. retweets) were scraped from both accounts.
 
