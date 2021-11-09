@@ -11,7 +11,7 @@
 
 
 ## Problem Statement: 
-- Given a random posts, assign accordingly to the correct twitter account based on similar occuring words.
+- Given a random tweet, assign accordingly to the correct twitter account based on similar occuring words.
 - What are the most repeated words in each tweet.
 - What is the average length of words for each tweet.
 
