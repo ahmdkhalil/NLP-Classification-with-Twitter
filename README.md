@@ -106,6 +106,6 @@ Mizi Wahid:
 
 #### Suggestions to improve:
 
-1. Additional words can be added into the list of stopwords, for example the words that has high frequency in both subreddits.
+1. Additional words can be added into the list of stopwords, for example the words that has high frequency in both twitters.
 2. Further improve on lemmatizing and tokenizing
 3. Experiment with other types of algorithms and ensemble methods such as Boosting, Bagging etc.
