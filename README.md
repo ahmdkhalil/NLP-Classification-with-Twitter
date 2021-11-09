@@ -9,20 +9,21 @@
 5. Modelling & Evaluation
 6. Conclusion and Suggestions
 
+----------------------------
 
-## Problem Statement: 
+## 1. Problem Statement: 
 - Given a random tweet, assign accordingly to the correct twitter account based on similar occuring words.
 - What are the most repeated words in each tweet.
 - What is the average length of words for each tweet.
 
-### Data Collection:
+### 2. Data Collection:
 
 Scrap two twitter accounts: Mufti Menk & Mizi Wahid, using twitter scrapper and import to csv file.
 
 A total collection of 1798 tweets(incl. retweets) were scraped from both accounts.
 
 
-### Data Cleaning:
+### 3. Data Cleaning:
 
 Series of cleaning done:
 1. Regex (String to lower case, remove non words characters and numbers (punctuation, curly brackets etc))
@@ -31,7 +32,7 @@ Series of cleaning done:
 4. Remove stopwords
 
 
-### Pre-processing and EDA
+### 4. Pre-processing and EDA
 
 Final results for both accounts:
 
@@ -53,7 +54,7 @@ Basic EDA:
 ![muftimenkwordcount](https://github.com/Mr-Ahmad-Khalil/Twitter_Classification/blob/main/images/muftimenk%20word%20count.png)
 ![miziwahidwordcount](https://github.com/Mr-Ahmad-Khalil/Twitter_Classification/blob/main/images/miziwahid%20word%20count.png)
 
-### Modelling and Evaluation
+### 5. Modelling and Evaluation
 
 Data dsitribution is quite balanced:
 
@@ -83,7 +84,7 @@ By using Logistic Regression to look at the best predicting words for each twitt
 ![miziwahidbestpredict](https://github.com/Mr-Ahmad-Khalil/Twitter_Classification/blob/main/images/bestpredictingwords%20miziwahid.png)
 
 
-### Conclusion and Suggestions
+### 6. Conclusion and Suggestions
 
 In conclusion: Random Forest Classifier performed better than Multinomial Naive Bayes.
 
