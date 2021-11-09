@@ -52,8 +52,8 @@ Basic EDA:
 |Average word count/tweet| 52.13 | 36.98      |
 |Maximum word count/tweet| 64    | 63         |
  
-![muftimenkwordcount]()
-![miziwahidwordcount]()
+![muftimenkwordcount](https://github.com/Mr-Ahmad-Khalil/Twitter_Classification/blob/main/images/muftimenk%20word%20count.png)
+![miziwahidwordcount](https://github.com/Mr-Ahmad-Khalil/Twitter_Classification/blob/main/images/miziwahid%20word%20count.png)
 
 ### Modelling and Evaluation
 
@@ -64,8 +64,8 @@ Data dsitribution is quite balanced:
 
 Some of the top occuring words in each account:
 
-![muftimenktopword]()
-![miziwahidtopword]()
+![muftimenktopword](https://github.com/Mr-Ahmad-Khalil/Twitter_Classification/blob/main/images/topword%20muftimenk.png)
+![miziwahidtopword](https://github.com/Mr-Ahmad-Khalil/Twitter_Classification/blob/main/images/topwords%20miziwahid.png)
 
 For this project I ran two models Random Forest(rf) and Multinomial Naive Bayes(nb) after running CountVectorizer(cvec) in the pipeline.
 
@@ -81,8 +81,8 @@ Summary table results:
 
 By using Logistic Regression to look at the best predicting words for each twitter account as follows:
 
-![muftimenkbestpredict]()
-![miziwahidbestpredict]()
+![muftimenkbestpredict](https://github.com/Mr-Ahmad-Khalil/Twitter_Classification/blob/main/images/bestpredictingwords%20muftimenk.png)
+![miziwahidbestpredict](https://github.com/Mr-Ahmad-Khalil/Twitter_Classification/blob/main/images/bestpredictingwords%20miziwahid.png)
 
 
 ### Conclusion and Suggestions
