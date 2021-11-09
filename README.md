@@ -1,6 +1,4 @@
-# Project 3
-
-
+# Twitter Classification project
 
 ## The Process:
 
