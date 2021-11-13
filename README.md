@@ -56,7 +56,7 @@ Basic EDA:
 
 ### 5. Modelling and Evaluation
 
-Data dsitribution is quite balanced:
+Data distribution is quite balanced:
 
 -Mufti Menk (0): 0.576948
 -Mizi Wahid (1): 0.423052
@@ -88,7 +88,7 @@ By using Logistic Regression to look at the best predicting words for each twitt
 
 In conclusion: Random Forest Classifier performed better than Multinomial Naive Bayes.
 
-Top 5 words bet predict each account:
+Top 5 words best predict each account:
 
 Mufti Menk:
 1. Almighty
