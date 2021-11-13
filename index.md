@@ -1,12 +1,22 @@
-## Welcome to GitHub Pages
+## Summary
 
-You can use the [editor on GitHub](https://github.com/Mr-Ahmad-Khalil/Twitter_Classification/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+In this article I will explain in detail on how I worked on the twitter classification project.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Introduction
 
-### Markdown
+Mental issue has been a big topic in the recent years and has burst even more after the recent covid pandemic with the closing of borders, lockdown situation and what not.
+This project is part of NLP projects and using classification algorithms to predict the twitters to the correct account holder. Before I go further let me breakdown the points of this article and we'll go through it one by one.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Content:
+
+1. Twitter Scrapping
+2. Natural LAnguage Processing
+3. Classification Modelling
+
+
+### 1. Twitter Scrapping
+
+Here is a funny story, while I was 
 
 ```markdown
 Syntax highlighted code block
