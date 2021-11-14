@@ -16,7 +16,7 @@ Content:
 
 ### 1. Twitter Scrapping
 
-This is the one that took the most part of my the project. I used the twitter api 
+This is the one that took the most part of my the project. I used the [twitter api](https://developer.twitter.com/en/docs/twitter-api), check this [website](https://towardsdatascience.com/how-to-scrape-tweets-from-twitter-59287e20f0f1) that explains more. I used the tweepy for scraping.
 
 ```markdown
 Syntax highlighted code block
