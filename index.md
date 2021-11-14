@@ -1,8 +1,8 @@
-## Summary
+# Summary
 
 In this article I will explain in detail on how I worked on the twitter classification project.
 
-### Introduction
+# Introduction
 
 Mental issue has been a big topic in the recent years and has burst even more after the recent covid pandemic with the closing of borders, lockdown situation and what not.
 This project is part of NLP projects and using classification algorithms to predict the twitters to the correct account holder. And the twitter I chose are both whom I really admire especially in the areas of mental well being and self love. Before I go further let me breakdown the points of this article and we'll go through it one by one.
@@ -14,9 +14,21 @@ Content:
 3. Classification Modelling
 
 
-### 1. Twitter Scrapping
+## 1. Twitter Scrapping (Tweepy)
 
-This is the one that took the most part of my the project. I used the [twitter api](https://developer.twitter.com/en/docs/twitter-api), check this [website](https://towardsdatascience.com/how-to-scrape-tweets-from-twitter-59287e20f0f1) that explains more. I used the tweepy for scraping.
+This is the one that took the most part of my the project. There are a few steps to get scrap data from twitter.
+
+### Get a developer account from twitter
+
+#### Gaining Credentials for Tweepy
+
+In order to receive credentials, you must apply to become a Twitter developer here. This does require that you have a Twitter account. The application will ask various questions about what sort of work you want to do. Don’t fret, these details don’t have to be extensive, and the process is relatively easy. [Apply here](https://developer.twitter.com/en/docs/twitter-api)
+
+![Twitter Developer Landing Page](https://github.com/Mr-Ahmad-Khalil/Twitter_Classification/blob/gh-pages/pages_images/Twitter%20Developer%20landing%20page.png)
+
+
+
+check this [website](https://towardsdatascience.com/how-to-scrape-tweets-from-twitter-59287e20f0f1) that explains more. I used the tweepy for scraping.
 
 ```markdown
 Syntax highlighted code block
