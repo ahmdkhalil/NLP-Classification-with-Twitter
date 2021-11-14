@@ -5,18 +5,18 @@ In this article I will explain in detail on how I worked on the twitter classifi
 ### Introduction
 
 Mental issue has been a big topic in the recent years and has burst even more after the recent covid pandemic with the closing of borders, lockdown situation and what not.
-This project is part of NLP projects and using classification algorithms to predict the twitters to the correct account holder. Before I go further let me breakdown the points of this article and we'll go through it one by one.
+This project is part of NLP projects and using classification algorithms to predict the twitters to the correct account holder. And the twitter I chose are both whom I really admire especially in the areas of mental well being and self love. Before I go further let me breakdown the points of this article and we'll go through it one by one.
 
 Content:
 
 1. Twitter Scrapping
-2. Natural LAnguage Processing
+2. Natural Language Processing
 3. Classification Modelling
 
 
 ### 1. Twitter Scrapping
 
-Here is a funny story, while I was 
+This is the one that took the most part of my the project. I used the twitter api 
 
 ```markdown
 Syntax highlighted code block
