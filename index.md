@@ -26,11 +26,11 @@ In order to receive credentials, you must apply to become a Twitter developer he
 
 ### Step 2: Get credentials
 
-In order to get your credentials: API key, API key secret, Access token, Access token secret, you wil have to create a project and an app from the project within your developer account. Make sure to copy and paste it somewhere to use it for scraping because if you need to look at it again you will have to regenerate which is kind of a hassle.
+In order to get your credentials: API key, API key secret, Access token, Access token secret, you wil have to create a project and an app from the project within your developer account. Make sure to copy and paste the four items somewhere to use it later for scraping because if you need to look at it again you will have to regenerate which is kind of a hassle.
 
 ### Step 3: Install Tweepy
 
-If you have not installed it yet then you may do so with the following codes:
+Before starting to scrape, you will need to install with the following codes:
 
 ```markdown
 
@@ -43,7 +43,9 @@ pip3 install tweepy
 If you prefer to install in your jupyter notebook like I did, use the former. You may also install it via the command prompt this works for python 3. The tweepy version I am currently using is 4.1.0.
 
 
-### Step 4: 
+### Step 4: Import and set API 
+
+You may start scraping but first import and replace the key and token with your own.
 
 ```markdown
 
@@ -58,7 +60,7 @@ api = tweepy.API(auth)
                       
 ```
 
-Create a list of timeline_ids to use to fetch the correct timeline for a twitter account:
+Then create a list to fetch the desired timeline for a twitter account:
 
 ```markdown
 
@@ -80,7 +82,8 @@ print(timeline_ids)
 
 ```
 
-Here we need to use a Cursor, What is Cursor doing it is actually ....
+Here we need to use a Cursor. Why we are using Cursor is because we use pagination a lot in Twitter API development. Iterating through timelines, user lists, direct messages, etc. In order to perform pagination we must supply a page/cursor parameter with each of our requests. The problem here is this requires a lot of boiler plate code just to manage the pagination loop. To help make pagination easier and require less code Tweepy has the Cursor object. More from it [here](https://docs.tweepy.org/en/v3.5.0/cursor_tutorial.html)
+
 
 ```markdown
 # to iterate through each account
@@ -128,6 +131,7 @@ for key, values in timeline_ids.items():
             end_time = datetime.now()
             print(end_time - start_time)
             start_time = datetime.now()
+# put to sleep for 15 min
             t.sleep(60 * 15)
     end_time = datetime.now()
     print(end_time - start_time)
@@ -137,29 +141,26 @@ print(raw_tweets)
 
 ```
 
-After that is done I double checked on the len
+Next convert to Dataframe and save to csv so that you can work on it later.
+
 
 ```markdown
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
+df = pd.DataFrame(raw_tweets)
+df.info()
 
 ```
 
-### Jekyll Themes
+```markdwon
+df.to_csv('./dataset/df.csv')
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Mr-Ahmad-Khalil/Twitter_Classification/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Conclusion
+
+
 
 ### Resources:
 
 1. [How to Scrape tweets from Twitter](https://towardsdatascience.com/how-to-scrape-tweets-from-twitter-59287e20f0f1)
+2. [Tweepy Cursor](https://docs.tweepy.org/en/v3.5.0/cursor_tutorial.html)
+3. [Tweepy Documentation](https://docs.tweepy.org/en/v4.1.0/install.html)
 
