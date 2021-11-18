@@ -166,5 +166,5 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 ### Resources:
 
-1. [How to Scrape tweets from Twitter](https://towardsdatascience.com/how-to-scrape-tweets-from-twitter-59287e20f0f1) that explains more. I used the tweepy for scraping.
+1. [How to Scrape tweets from Twitter](https://towardsdatascience.com/how-to-scrape-tweets-from-twitter-59287e20f0f1)
 
