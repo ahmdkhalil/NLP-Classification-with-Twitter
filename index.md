@@ -62,7 +62,7 @@ Create a list of timeline_ids to use to fetch the correct timeline for a twitter
 
 ```markdown
 
-user_name = ['muftimenk', 'mizi_wahid']
+user_name = [twitter account, twitter account 2]
 counter = 0 
 timeline_ids = {} 
 start_time = datetime.now() 
@@ -82,10 +82,11 @@ print(timeline_ids)
 Here we need to use a Cursor, What is Cursor doing it is actually ....
 
 ```markdown
-
-for i in timeline_ids: #to iterate through each account
-    for status in tweepy.Cursor(api.user_timeline, user_id = i).items(1000): # scraping the status id and insert it to a list
-    # process status here 
+# to iterate through each account
+for i in timeline_ids: 
+# scraping the status id and insert it to a list
+    for status in tweepy.Cursor(api.user_timeline, user_id = i).items(1000): 
+   # process status here 
         timeline_ids[i].append(status.id)
         counter += 1 
 print(timeline_ids)
@@ -96,7 +97,7 @@ Why I didn't scrape directly it is because twitter has a limit of how much tweet
 
 So with this method you can use a crawling method to automatic put a timer of 15 min before continue to scrape the next batch and so on.
 
-There are a few params you can use to get what you want, you may look at the documentation [here](https://www.documentation.com)
+There are a few params you can use to get what you want, you may look at the documentation [here](https://docs.tweepy.org/en/v4.1.0/install.html)
 
 ```markdown
 
@@ -115,22 +116,19 @@ for key, values in timeline_ids.items():
                            "text": res.full_text,
                            "len": len(res.full_text),
                            "source": res.source,
-                           #"likes": np.array([res.favourite_count for tweet in res]),
-                           #"retweets": np.array([res.retweet_count for tweet in res])
                                 }) 
-            #end_time = datetime.now()
-            #start_time = datetime.now()
-            #print(end_time - start_time)
             #t.sleep(60 * 15) 
             del res
             print(count)
-            count += 1 # check the number of requests
+   # check the number of requests
+            count += 1 
+   # return error after reached request limit
         except tweepy.TooManyRequests as r:
-            print(f'{count}: Rate limit error exceed 490 requests')
-    end_time = datetime.now()
-    print(end_time - start_time)
-    start_time = datetime.now()
-    t.sleep(60 * 15)
+            print(f'{count}: Rate limit error exceed 900 requests')
+            end_time = datetime.now()
+            print(end_time - start_time)
+            start_time = datetime.now()
+            t.sleep(60 * 15)
     end_time = datetime.now()
     print(end_time - start_time)
 end_time = datetime.now()
