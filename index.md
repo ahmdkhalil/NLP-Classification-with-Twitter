@@ -62,7 +62,8 @@ Create a list of timeline_ids to use to fetch the correct timeline for a twitter
 
 ```markdown
 
-user_name = [twitter account, twitter account 2]
+user_name = ['twitter account', 'another twitter account']
+# replace 'twitter account' with your target twitter account
 counter = 0 
 timeline_ids = {} 
 start_time = datetime.now() 
@@ -86,7 +87,7 @@ Here we need to use a Cursor, What is Cursor doing it is actually ....
 for i in timeline_ids: 
 # scraping the status id and insert it to a list
     for status in tweepy.Cursor(api.user_timeline, user_id = i).items(1000): 
-   # process status here 
+# process status here 
         timeline_ids[i].append(status.id)
         counter += 1 
 print(timeline_ids)
@@ -117,12 +118,11 @@ for key, values in timeline_ids.items():
                            "len": len(res.full_text),
                            "source": res.source,
                                 }) 
-            #t.sleep(60 * 15) 
             del res
             print(count)
-   # check the number of requests
+# check the number of requests
             count += 1 
-   # return error after reached request limit
+# return error after reached request limit
         except tweepy.TooManyRequests as r:
             print(f'{count}: Rate limit error exceed 900 requests')
             end_time = datetime.now()
@@ -153,10 +153,7 @@ After that is done I double checked on the len
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
 ```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 ### Jekyll Themes
 
