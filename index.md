@@ -49,7 +49,12 @@ You may start scraping but first import and replace the key and token with your 
 
 ```markdown
 
+import pandas as pd
+import numpy as np
 import tweepy
+import time as t
+import datetime
+from datetime import datetime
 
 auth = tweepy.OAuthHandler(API key, 
                            API key secret)
