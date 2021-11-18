@@ -26,7 +26,7 @@ In order to receive credentials, you must apply to become a Twitter developer he
 
 ### Step 2: Get credentials
 
-In order to get your credentials: API key, API key secret, Access token, Access token secret, you wil have to create a project and an app from the project within your developer account. Make sure to copy and paste it somewhere to use it for scraping because if you need to look at it again you will have to regenerate which is kind of a hassale.
+In order to get your credentials: API key, API key secret, Access token, Access token secret, you wil have to create a project and an app from the project within your developer account. Make sure to copy and paste it somewhere to use it for scraping because if you need to look at it again you will have to regenerate which is kind of a hassle.
 
 ### Step 3: Install Tweepy
 
@@ -92,7 +92,7 @@ print(timeline_ids)
 
 ```
 
-Why I didn't scrape directly it is because twitter has a limit of how much tweets you can scrape within a 15 min period which is 
+Why I didn't scrape directly it is because twitter has a limit of how much tweets you can scrape within a 15 min period which is 900 requests.
 
 So with this method you can use a crawling method to automatic put a timer of 15 min before continue to scrape the next batch and so on.
 
