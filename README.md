@@ -2,7 +2,7 @@
 
 ## Introduction:
 
-A web scraping project with classification problem prediction. Two twitters that has high focus on mental well being and self love. One globally recognized throughout various religios groups the other well-known in the region. In this project I will use the twitter api to scrape data from twitter and run a few classification models then choose the best.
+A web scraping project with classification problem prediction. Two twitters that has high focus on mental well being and self love. One globally recognized throughout various religious groups the other well-known in the region. In this project I will use the twitter api to scrape data from twitter and run a few classification models then choose the best.
 
 ## The Process:
 
@@ -111,7 +111,7 @@ Mizi Wahid:
 5. Allah
 
 
-Just like previously mentioned the word God is highly repeatd in both accounts. Being the subject matter of their tweets mostly revolve around self-love and mental well being you can see that the word 'love', 'remember', 'let' as in let go of the negativity, 'keep' as in keep hold of the good things in life would predict the best for each account.
+Just like previously mentioned the word God is highly repeated in both accounts. Being the subject matter of their tweets mostly revolve around self-love and mental well being you can see that the word 'love', 'remember', 'let' as in let go of the negativity, 'keep' as in keep hold of the good things in life would predict the best for each account.
 
 #### Suggestions to improve:
 
