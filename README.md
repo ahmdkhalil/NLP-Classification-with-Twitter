@@ -2,7 +2,7 @@
 
 ## Introduction:
 
-A web scraping project with classification problem prediction. Two twitters that has high focus on mental well being and self love. One globally recognized thoroughout various religios groups the other well-known in the region. In this project I will use the twitter api to scrape data from twitter and run a few classification models then choose the best.
+A web scraping project with classification problem prediction. Two twitters that has high focus on mental well being and self love. One globally recognized throughout various religios groups the other well-known in the region. In this project I will use the twitter api to scrape data from twitter and run a few classification models then choose the best.
 
 ## The Process:
 
