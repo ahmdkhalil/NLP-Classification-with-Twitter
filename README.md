@@ -1,5 +1,9 @@
 # Twitter Classification project
 
+## Introduction:
+
+A web scraping project with classification problem prediction. Two twitters that has high focus on mental well being and self love. One globally recognized thoroughout various religios groups the other well-known in the region. In this project I will use the twitter api to scrape data from twitter and run a few classification models then choose the best.
+
 ## The Process:
 
 1. Problem Statement
@@ -66,6 +70,8 @@ Some of the top occuring words in each account:
 ![muftimenktopword](https://github.com/Mr-Ahmad-Khalil/Twitter_Classification/blob/main/images/topword%20muftimenk.png)
 ![miziwahidtopword](https://github.com/Mr-Ahmad-Khalil/Twitter_Classification/blob/main/images/topwords%20miziwahid.png)
 
+The choice of repeated words found in each accounts shows the word 'God' often. This shows how important the presence of God in their way of preaching and keeping a positive well being.
+
 For this project I ran two models Random Forest(rf) and Multinomial Naive Bayes(nb) after running CountVectorizer(cvec) in the pipeline.
 
 - Best parameters for the first model: cvec__max_df: 0.75, cvec__max_features: 170, cvec__min_df: 0.1, cvec__ngram_range: (1, 1), rf__max_depth: 2
@@ -103,6 +109,9 @@ Mizi Wahid:
 3. love
 4. new
 5. Allah
+
+
+Just like previously mentioned the word God is highly repeatd in both accounts. Being the subject matter of their tweets mostly revolve around self-love and mental well being you can see that the word 'love', 'remember', 'let' as in let go of the negativity, 'keep' as in keep hold of the good things in life would predict the best for each account.
 
 #### Suggestions to improve:
 
